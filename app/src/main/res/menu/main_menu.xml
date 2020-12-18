@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/set_eu"
+            android:orderInCategory="1"
+            android:title="Конвертор. Європа" />
+        <item
+            android:id="@+id/set_am"
+            android:orderInCategory="2"
+            android:title="Конвертор. Америка" />
+        <item
+            android:id="@+id/set_about"
+            android:orderInCategory="3"
+            android:title="About" />
+        <item
+            android:id="@+id/set_rules"
+            android:orderInCategory="4"
+            android:title="Правила використання" />
+        <item
+            android:id="@+id/set_share"
+            android:orderInCategory="5"
+            android:title="Поділитися" />
+
+</menu>

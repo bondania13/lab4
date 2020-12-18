@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/buttons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DAD2EA">
+
+    <Button
+        android:id="@+id/convert_eu_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_y="100dp"
+        android:layout_marginTop="120dp"
+        android:onClick="openEUconverter"
+        android:text="Європа"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:backgroundTint="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/convert_am_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_eu_button"
+        android:layout_marginTop="5dp"
+        android:onClick="openAMconverter"
+
+        android:text="Америка"
+        android:textColor="#020000"
+        android:textSize="16sp"
+        android:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/openAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_am_button"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="150dp"
+        android:onClick="openAbout"
+        android:text="About" />
+
+    <Button
+        android:id="@+id/openRules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openAbout"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openRules"
+        android:text="Правила використання" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="450dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="Оберіть регіон країни"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+<fragment
+android:id="@+id/europeFragment"
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:name="com.example.lab1.EuropeFragment"/>
+    <!--    -->
+<fragment
+android:id="@+id/americaFragment"
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:name="com.example.lab1.AmericaFragment"/>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:name="com.example.lab1.AboutFragment"/>
+
+<fragment
+android:id="@+id/rulesFragment"
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:name="com.example.lab1.RulesFragment"/>
+</RelativeLayout>

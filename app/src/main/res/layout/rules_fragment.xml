@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Правила використання"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:text="У додатку реалізована конвертація між 5-ма національними валютами країн Америки та 5-ма національними валютами країн Європи. Для початку роботи на головному вікні оберіть регіон розташування держав, чиї валюти ви хочете конвертувати – Америка чи Європа. На вікні, що відкриється, оберіть валюту, з якої конвертуємо, та валюту, на яку конвертуємо. Після цього введіть суму, яку хочете конвертувати, і натисніть кнопку Конвертувати. Якщо ви хочете обрати інший регіон, поверніться на головне вікно.
+"
+            android:textSize="17sp" />
+
+        <!--
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:onClick="onGoToAMconverter"
+                    android:text="Конвертувати американські валюти" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="onGoToEUconverter"
+                    android:text="Конвертувати європейські валюти" />
+
+        -->
+                <Button
+                    android:id="@+id/closeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:onClick="closeButton"
+                    android:text="Повернутися на головну" />
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
